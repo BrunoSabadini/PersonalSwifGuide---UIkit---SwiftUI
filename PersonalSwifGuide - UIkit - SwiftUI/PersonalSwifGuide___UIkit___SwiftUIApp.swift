@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct PersonalSwifGuide___UIkit___SwiftUIApp: App {
+  @StateObject private var dataController = DataController()
+  
     var body: some Scene {
         WindowGroup {
-            ContentView()
+       ContentView()
+            .environment(\.managedObjectContext, dataController.container.viewContext)
+              }
         }
     }
-}
