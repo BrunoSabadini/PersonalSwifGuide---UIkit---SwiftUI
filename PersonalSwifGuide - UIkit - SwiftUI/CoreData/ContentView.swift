@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct CoreDataExampleView: View {
   
   @Environment(\.managedObjectContext) var moc
   @FetchRequest(sortDescriptors: []) var students: FetchedResults<Student>
@@ -44,6 +44,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    ContentView()
+    CoreDataExampleView()
   }
 }

@@ -13,7 +13,7 @@ struct PersonalSwifGuide___UIkit___SwiftUIApp: App {
   
     var body: some Scene {
         WindowGroup {
-       ContentView()
+          DollarAPI()
             .environment(\.managedObjectContext, dataController.container.viewContext)
               }
         }
